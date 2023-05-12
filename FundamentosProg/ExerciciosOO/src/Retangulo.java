@@ -14,7 +14,7 @@ public class Retangulo {
     public void setAltura(double alturaParam){ altura = alturaParam;}
 
     public double areaRetangulo(){
-        return getBase() * getAltura(); 
+        return getBase() * getAltura();
     }
     public double perimetroRetangulo(){
         return 2*(getBase() + getAltura());
