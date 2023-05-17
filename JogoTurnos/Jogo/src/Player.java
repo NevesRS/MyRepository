@@ -1,4 +1,11 @@
 public class Player {
+    
+    // public class enum arma{
+    //     faca,espada,cajado
+    // }
+
+    // 
+    
     private int vida;
     private int forca;
     private int stamina;
