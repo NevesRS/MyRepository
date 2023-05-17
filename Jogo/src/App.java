@@ -4,8 +4,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
 
-        Player player = new Player(2, 2, 100);
-        Enemy enemy = new Enemy(4, 2, 100);
+        Player player = new Player(10, 2, 100);
+        Enemy enemy = new Enemy(10, 2, 100);
 
         int turno = 0;
         boolean isDead = false;
@@ -28,12 +28,11 @@ public class App {
                 if (enemy.getVida() > 0) {
                     System.out.println("Vida do inimigo: " + enemy.getVida());
                 }
-            }
-            if (enemy.getVida() <= 0) {
-                System.out.println("Inimigo morreu!");
+                if (enemy.getVida() <= 0) {
+                    System.out.println("Inimigo morreu!");
+                }
             }
             
-
             // ALGORITMO INIMIGO
 
             if (enemy.getVida() > 0 && isDead == false){
@@ -52,11 +51,11 @@ public class App {
                 if (player.getVida() > 0) {
                     System.out.println("Vida do player: " + player.getVida());
                 }
+                if (player.getVida() <= 0) {
+                    System.out.println("Player morreu!");
+                }
             }
-            if (player.getVida() <= 0) {
-                System.out.println("Player morreu!");
-            }
-
+            
             if (player.getVida() <= 0 || enemy.getVida() <= 0) {
                 isDead = true;
             }
