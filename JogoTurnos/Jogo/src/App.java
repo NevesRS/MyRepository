@@ -14,7 +14,7 @@ public class App {
             // ALGORITMO PLAYER
 
             if (player.getVida() > 0 && isDead == false) {
-                System.out.println("\nTurno do player, digite 'atacar, 'defender' ou 'descansar'"
+                System.out.println("Turno do player, digite 'atacar, 'defender' ou 'descansar'"
                         + "\nStamina do player: " + player.getStamina());
                 String comandoPlayer = teclado.nextLine();
 
@@ -33,7 +33,7 @@ public class App {
                     turno = 1;
                 }
                 if (enemy.getVida() > 0) {
-                    System.out.println("Vida do inimigo: " + enemy.getVida());
+                    System.out.println("\nVida do inimigo: " + enemy.getVida());
                 }
                 if (enemy.getVida() <= 0) {
                     System.out.println("Inimigo morreu!");
@@ -46,7 +46,7 @@ public class App {
             // ALGORITMO INIMIGO
 
             if (enemy.getVida() > 0 && isDead == false) {
-                System.out.println("\nTurno do inimigo, digite 'atacar', 'defender' ou 'descansar': "
+                System.out.println("Turno do inimigo, digite 'atacar', 'defender' ou 'descansar': "
                         + "\nStamina do inimigo: " + enemy.getStamina());
                 String comandoEnemy = teclado.nextLine();
 
@@ -65,7 +65,7 @@ public class App {
                     turno = 0;
                 }
                 if (player.getVida() > 0) {
-                    System.out.println("Vida do player: " + player.getVida());
+                    System.out.println("\nVida do player: " + player.getVida());
                 }
                 if (player.getVida() <= 0) {
                     System.out.println("Player morreu!");
