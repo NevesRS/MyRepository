@@ -18,7 +18,7 @@ public class App {
                         + "\nStamina do player: " + player.getStamina());
                 String comandoPlayer = teclado.nextLine();
 
-                if (comandoPlayer.equals("atacar") && turno == 0 && player.getStamina() > 0 && isDead == false) {
+                if (comandoPlayer.equals("atacar") && turno == 0 && player.getStamina() > 0) {
                     enemy.setVida(enemy.getVida() - player.getForca());
                     player.setStamina(player.getStamina() - 5);
                     turno = 1;
@@ -50,7 +50,7 @@ public class App {
                         + "\nStamina do inimigo: " + enemy.getStamina());
                 String comandoEnemy = teclado.nextLine();
 
-                if (comandoEnemy.equals("atacar") && turno == 1 && enemy.getStamina() > 0 && isDead == false) {
+                if (comandoEnemy.equals("atacar") && turno == 1 && enemy.getStamina() > 0) {
                     player.setVida(player.getVida() - enemy.getForca());
                     enemy.setStamina(enemy.getStamina() - 5);
                     turno = 0;
