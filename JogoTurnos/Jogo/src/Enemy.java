@@ -2,11 +2,13 @@ public class Enemy {
     private int vida;
     private int forca;
     private int stamina;
+    private int armadura;
 
-    public Enemy(int vida, int forca, int stamina){
+    public Enemy(int vida, int forca, int stamina, int armadura){
         this.vida = vida;
         this.forca = forca;
         this.stamina = stamina;
+        this.armadura = armadura;
     }
 
     public int getForca() {
@@ -18,6 +20,9 @@ public class Enemy {
     public int getStamina() {
         return stamina;
     }
+    public int getArmadura() {
+        return armadura;
+    }
 
     public void setForca(int forca) {
         this.forca = forca;
@@ -27,5 +32,8 @@ public class Enemy {
     }
     public void setStamina(int stamina) {
         this.stamina = stamina;
+    }
+    public void setArmadura(int armadura) {
+        this.armadura = armadura;
     }
 }

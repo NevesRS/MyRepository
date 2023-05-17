@@ -4,8 +4,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
 
-        Player player = new Player(10, 2, 100);
-        Enemy enemy = new Enemy(10, 2, 100);
+        Player player = new Player(10, 2, 15, 5);
+        Enemy enemy = new Enemy(10, 2, 15, 5);
 
         int turno = 0;
         boolean isDead = false;
@@ -14,7 +14,7 @@ public class App {
             // ALGORITMO PLAYER
 
             if (player.getVida() > 0 && isDead == false) {
-                System.out.println("Turno do player, digite 'atacar':" + "\nStamina do player: " + player.getStamina());
+                System.out.println("Turno do player, digite 'atacar, 'defender' ou descansar"+"\nStamina do player: " + player.getStamina());
                 String comandoPlayer = teclado.nextLine();
 
                 if (comandoPlayer.equals("atacar") && turno == 0 && player.getStamina() > 0 && isDead == false) {
@@ -25,6 +25,10 @@ public class App {
                 if (comandoPlayer.equals("descansar") && turno == 0) {
                     player.setStamina(player.getStamina() + 5);
                 }
+                if(comandoPlayer.equals("defender") && turno == 0){
+                    player.setVida(player.getVida()+player.getArmadura());
+                    player.setStamina(player.getStamina() - 5);
+                }
                 if (enemy.getVida() > 0) {
                     System.out.println("Vida do inimigo: " + enemy.getVida());
                 }
@@ -32,12 +36,11 @@ public class App {
                     System.out.println("Inimigo morreu!");
                 }
             }
-            
+
             // ALGORITMO INIMIGO
 
-            if (enemy.getVida() > 0 && isDead == false){
-                System.out
-                        .println("Turno do inimigo, digite 'atacar':" + "\nStamina do inimigo: " + enemy.getStamina());
+            if (enemy.getVida() > 0 && isDead == false) {
+                System.out.println("Turno do inimigo, digite 'atacar', 'defender' ou 'descansar': " + "\nStamina do inimigo: " + enemy.getStamina());
                 String comandoEnemy = teclado.nextLine();
 
                 if (comandoEnemy.equals("atacar") && turno == 1 && enemy.getStamina() > 0 && isDead == false) {
@@ -48,6 +51,10 @@ public class App {
                 if (comandoEnemy.equals("descansar") && turno == 0) {
                     enemy.setStamina(enemy.getStamina() + 5);
                 }
+                if(comandoEnemy.equals("defender") && turno == 0){
+                    enemy.setVida(enemy.getVida()+enemy.getArmadura());
+                    enemy.setStamina(enemy.getStamina() - 5);
+                }
                 if (player.getVida() > 0) {
                     System.out.println("Vida do player: " + player.getVida());
                 }
@@ -55,7 +62,7 @@ public class App {
                     System.out.println("Player morreu!");
                 }
             }
-            
+
             if (player.getVida() <= 0 || enemy.getVida() <= 0) {
                 isDead = true;
             }

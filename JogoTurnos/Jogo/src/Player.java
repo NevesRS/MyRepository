@@ -2,11 +2,13 @@ public class Player {
     private int vida;
     private int forca;
     private int stamina;
+    private int armadura;
 
-    public Player(int vida, int forca, int stamina){
+    public Player(int vida, int forca, int stamina, int armadura){
         this.vida = vida;
         this.forca = forca;
         this.stamina = stamina;
+        this.armadura = armadura;
     }
 
     public int getForca() {
@@ -18,6 +20,9 @@ public class Player {
     public int getStamina() {
         return stamina;
     }
+    public int getArmadura() {
+        return armadura;
+    }
 
     public void setForca(int forca) {
         this.forca = forca;
@@ -27,5 +32,8 @@ public class Player {
     }
     public void setStamina(int stamina) {
         this.stamina = stamina;
+    }
+    public void setArmadura(int armadura) {
+        this.armadura = armadura;
     }
 }
