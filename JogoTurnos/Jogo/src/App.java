@@ -16,8 +16,8 @@ public class App {
         String vocacaoPlayer = teclado.nextLine();
         if(vocacaoPlayer.equals("barbaro")){
             playerIsDecided = true;
-            player.setVida(25); player.setForca(8); player.setStamina(10); player.setArmadura(7);
-            // 25 + 8 + 10 + 7
+            player.setVida(25); player.setForca(6); player.setStamina(10); player.setArmadura(9);
+            // 25 + 6 + 10 + 9
         }
         if(vocacaoPlayer.equals("cavaleiro")){
             playerIsDecided = true;
@@ -38,7 +38,7 @@ public class App {
             String vocacaoEnemy = teclado.nextLine();
             if(vocacaoEnemy.equals("barbaro")){
                 enemyIsDecided = true;
-                enemy.setVida(25); enemy.setForca(8); enemy.setStamina(10); enemy.setArmadura(7);
+                enemy.setVida(25); enemy.setForca(6); enemy.setStamina(10); enemy.setArmadura(9);
             }
             if(vocacaoEnemy.equals("cavaleiro")){
                 enemyIsDecided = true;
