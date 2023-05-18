@@ -38,15 +38,15 @@ public class App {
             String vocacaoEnemy = teclado.nextLine();
             if(vocacaoEnemy.equals("barbaro")){
                 enemyIsDecided = true;
-                enemy.setVida(15); enemy.setForca(6); enemy.setStamina(7); enemy.setArmadura(5);
+                enemy.setVida(25); enemy.setForca(8); enemy.setStamina(10); enemy.setArmadura(7);
             }
             if(vocacaoEnemy.equals("cavaleiro")){
                 enemyIsDecided = true;
-                enemy.setVida(12); enemy.setForca(3); enemy.setStamina(8); enemy.setArmadura(8);
+                enemy.setVida(22); enemy.setForca(4); enemy.setStamina(12); enemy.setArmadura(12);
             }
             if(vocacaoEnemy.equals("ladino")){
                 enemyIsDecided = true;
-                enemy.setVida(10); enemy.setForca(2); enemy.setStamina(15); enemy.setArmadura(5);
+                enemy.setVida(20); enemy.setForca(5); enemy.setStamina(20); enemy.setArmadura(5);
             }
             System.out.println("Vocação do inimigo escolhida: "+vocacaoEnemy);
             }while(enemyIsDecided == false);
