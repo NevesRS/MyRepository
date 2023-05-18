@@ -12,7 +12,7 @@ public class App {
 
         do{
         System.out.println(
-        "Escolha sua classe: \n Bárbaro: 15 pontos de vida, 6 de força, 8 de stamina e 5 de armadura.\n Cavaleiro: 12 pontos de vida, 3 de força, 8 de stamina e 8 de armadura. \n Ladino: 10 pontos de vida 2 de força, 15 de stamina e 5 de armadura");
+        "Escolha sua classe: \n Bárbaro: 25 pontos de vida, 8 de força, 10 de stamina e 7 de armadura.\n Cavaleiro: 22 pontos de vida, 4 de força, 12 de stamina e 12 de armadura. \n Ladino: 20 pontos de vida 5 de força, 20 de stamina e 5 de armadura");
         String vocacaoPlayer = teclado.nextLine();
         if(vocacaoPlayer.equals("barbaro")){
             playerIsDecided = true;
