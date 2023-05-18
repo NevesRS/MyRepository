@@ -1,3 +1,6 @@
+/*  author: Bruno Neves
+    project: Duelers of Java */
+    
 import java.util.*;
 
 public class App {
