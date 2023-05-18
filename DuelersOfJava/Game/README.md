@@ -1,18 +1,5 @@
-## Getting Started
+I am a game development enthusiast, and I thought it would be interesting to program a game using Java based on the knowledge I acquired in my Fundamentals of Programming subject.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## This is a project about a game that utilizes the fundamental concepts of object-oriented programming. I have created a game that involves two players competing against each other. In the game, players can select their vocation based on specific advantages and disadvantages.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+⚔️ - You will accept the challenge?
